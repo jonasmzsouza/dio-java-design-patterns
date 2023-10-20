@@ -8,6 +8,7 @@ import me.dio.gof.behavioral.strategy.Robot;
 import me.dio.gof.creational.singleton.SingletonEager;
 import me.dio.gof.creational.singleton.SingletonLazy;
 import me.dio.gof.creational.singleton.SingletonLazyHolder;
+import me.dio.gof.structural.facade.Facade;
 
 public class Main {
 
@@ -44,6 +45,10 @@ public class Main {
 		robot.move();
 		robot.move();
 		robot.move();
+		
+		// Facade
+		Facade facade = new Facade();
+		facade.migrateCustomer("Jonas", "1234567890");
 
 	}
 
